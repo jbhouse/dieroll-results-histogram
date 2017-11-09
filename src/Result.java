@@ -17,7 +17,7 @@ public class Result {
 		}
     }
 	
-	public static String histogram(final int[] results) {
+	public static void histogram(final int[] results) {
 	    int[] sorted = new int[results.length];
 	    for(int q=0; q<results.length; q++) {
 	    	sorted[q] = results[q];
@@ -58,7 +58,6 @@ public class Result {
 	    	};
 	    	System.out.println(String.join("", hashOfRows.get(k)));
 	    };
-	    return "fail message";
 	};
 	
 	public static int askForInput(Scanner sc, String message) {
